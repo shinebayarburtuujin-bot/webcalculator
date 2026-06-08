@@ -1,13 +1,15 @@
 const display = document.getElementById('display');
+
 function appendValue(value) {
-    if (value === '.') {
-        return;
+    if (display.value === 'Error') {
+        display.value = '0';
     }
-}
-if (display.value === '0' && value !== '.') {
-    display.value = value;
-} else {
-    display.value += value;
+
+    if (display.value === '0' && value !== '.') {
+        display.value = value;
+    } else {
+        display.value += value;
+    }
 }
 
 function clearDisplay() {
@@ -20,4 +22,16 @@ function calculate() {
     } catch (error) {
         display.value = 'Error';
     }
+}
+
+function squareRoot() {
+    display.value = Math.sqrt(Number(display.value));
+}
+
+function square() {
+    display.value = Number(display.value) ** 2;
+}
+
+function toggleSign() {
+    display.value = Number(display.value) * -1;
 }
