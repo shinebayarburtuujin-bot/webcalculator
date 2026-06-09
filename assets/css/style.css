@@ -15,17 +15,29 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 bagana */
     gap: 20px; /* button-yn hoorond 20px zai */
 }
-button{
-    border-radius: 50%;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 20px;
-    background-color:coral;
+button{ width: 70px;
+
+    height: 70px;
+
+    background-color: red;
+
     color: white;
+
+    border: none;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    /* зүрх хэлбэр */
+
+    clip-path: path("M35 65 C10 45 0 30 10 15 C20 0 35 10 35 25 C35 10 50 0 60 15 C70 30 60 45 35 65 Z");
+    
 }
 .calculator{
-    background-color: blue;
+    background-color: pink;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -43,5 +55,5 @@ button{
     margin-bottom: 20px;
 }
 button:hover{
-    background-color: #ff0000;
+    background-color: black;
 }
