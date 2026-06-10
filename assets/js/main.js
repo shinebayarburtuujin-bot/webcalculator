@@ -35,3 +35,10 @@ function square() {
 function toggleSign() {
     display.value = Number(display.value) * -1;
 }
+function deleteLast() {
+    if (display.value.length > 1) {
+        display.value = display.value.slice(0, -1);
+    } else {
+        display.value = "0";
+    }
+}
